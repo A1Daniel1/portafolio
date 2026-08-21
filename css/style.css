@@ -1,14 +1,14 @@
 :root {
-  --bg: #0a192f;
-  --bg-alt: #0d1f3c;
-  --surface: #112240;
-  --surface-hover: #1d3461;
-  --border: #233554;
-  --text: #8892b0;
-  --bright: #ccd6f6;
-  --white: #e6f1ff;
-  --accent: #64ffda;
-  --accent-dim: rgba(100, 255, 218, 0.1);
+  --bg: #1a1410;
+  --bg-alt: #1f1914;
+  --surface: #26201a;
+  --surface-hover: #332a22;
+  --border: #3d3329;
+  --text: #b8a89a;
+  --bright: #e8d5c4;
+  --white: #f5ebe0;
+  --accent: #f59e0b;
+  --accent-dim: rgba(245, 158, 11, 0.12);
   --font: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
   --mono: 'JetBrains Mono', 'Fira Code', monospace;
   --nav-h: 70px;
@@ -74,7 +74,7 @@ img { max-width: 100%; display: block; }
   left: 0;
   right: 0;
   z-index: 100;
-  background: rgba(10, 25, 47, 0.88);
+  background: rgba(26, 20, 16, 0.92);
   backdrop-filter: blur(12px);
   border-bottom: 1px solid transparent;
   transition: border-color 0.3s, box-shadow 0.3s;
@@ -256,7 +256,7 @@ img { max-width: 100%; display: block; }
   background: var(--accent);
   color: var(--bg);
   transform: translateY(-2px);
-  box-shadow: 0 4px 20px rgba(100, 255, 218, 0.2);
+  box-shadow: 0 4px 20px rgba(245, 158, 11, 0.25);
 }
 
 .btn-secondary {
@@ -397,13 +397,19 @@ img { max-width: 100%; display: block; }
 .skill-card:hover {
   transform: translateY(-4px);
   border-color: var(--accent);
-  box-shadow: 0 8px 30px rgba(100, 255, 218, 0.08);
+  box-shadow: 0 8px 30px rgba(245, 158, 11, 0.1);
 }
 
 .skill-icon {
-  font-size: 2rem;
+  font-family: var(--mono);
+  font-size: 1.2rem;
+  font-weight: 700;
   margin-bottom: 0.8rem;
   color: var(--accent);
+  background: var(--accent-dim);
+  display: inline-block;
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
 }
 
 .skill-card h3 {
@@ -436,7 +442,7 @@ img { max-width: 100%; display: block; }
 .project-card:hover {
   transform: translateY(-4px);
   border-color: var(--accent);
-  box-shadow: 0 8px 30px rgba(100, 255, 218, 0.08);
+  box-shadow: 0 8px 30px rgba(245, 158, 11, 0.1);
 }
 
 .project-card-header {
@@ -447,8 +453,10 @@ img { max-width: 100%; display: block; }
 }
 
 .project-folder {
+  font-family: var(--mono);
   color: var(--accent);
-  font-size: 2rem;
+  font-size: 1.2rem;
+  font-weight: 700;
 }
 
 .project-gh-link {
@@ -511,12 +519,7 @@ img { max-width: 100%; display: block; }
 .result-card:hover {
   transform: translateY(-4px);
   border-color: var(--accent);
-  box-shadow: 0 8px 30px rgba(100, 255, 218, 0.08);
-}
-
-.result-icon {
-  font-size: 2.2rem;
-  margin-bottom: 0.8rem;
+  box-shadow: 0 8px 30px rgba(245, 158, 11, 0.1);
 }
 
 .result-card h3 {
