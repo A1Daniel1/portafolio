@@ -4,12 +4,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Daniel Ahumada | Portfolio</title>
-  <meta name="description" content="Systems & Software Engineering student interested in cloud computing, cybersecurity, and software architecture." />
-  <link rel="icon" href="https://github.com/A1Daniel1.png" />
+  <meta name="description" content="Systems Engineering student focused on building reliable, scalable software across the stack." />
   <link rel="stylesheet" href="css/style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
 </head>
 <body>
   <nav class="nav" id="nav">
@@ -20,13 +19,13 @@
       </button>
       <ul class="nav-links" id="nav-links">
         <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
+        <li><a href="#expertise">Expertise</a></li>
         <li><a href="#projects">Projects</a></li>
+        <li><a href="#results">Results</a></li>
         <li><a href="#contact">Contact</a></li>
-        <li>
-          <a href="https://github.com/A1Daniel1" target="_blank" rel="noopener" class="nav-gh" aria-label="GitHub">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
-          </a>
+        <li class="nav-socials">
+          <a href="https://github.com/A1Daniel1" target="_blank" rel="noopener" class="nav-social-link">GH</a>
+          <a href="https://www.linkedin.com/in/danielahumadaleon/" target="_blank" rel="noopener" class="nav-social-link">LI</a>
         </li>
       </ul>
     </div>
@@ -35,122 +34,248 @@
   <section class="hero" id="hero">
     <div class="hero-bg"></div>
     <div class="hero-content">
-      <p class="hero-greeting">Hi, my name is</p>
-      <h1 class="hero-name">Daniel Ahumada.</h1>
-      <h2 class="hero-tagline">I build things &amp; explore systems.</h2>
-      <p class="hero-desc">
-        Systems &amp; Software Engineering student at Universidad Escuela Colombiana de Ingenier&iacute;a Julio Garavito,
-        passionate about cloud computing, cybersecurity, and software architecture.
-      </p>
-      <div class="hero-actions">
-        <a href="#projects" class="btn btn-primary">View my work</a>
-        <a href="#contact" class="btn btn-secondary">Get in touch</a>
+      <div class="hero-text">
+        <p class="hero-greeting">Hi, I'm</p>
+        <h1 class="hero-name">Daniel Ahumada.</h1>
+        <h2 class="hero-tagline">I build scalable systems &amp; secure software.</h2>
+        <p class="hero-desc">Systems Engineering student focused on building reliable, scalable software across the stack &mdash; Java/Spring Boot, Node.js/TypeScript, React, and cloud deployment on Azure and AWS.</p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">View my work</a>
+          <a href="#contact" class="btn btn-secondary">Get in touch</a>
+        </div>
+      </div>
+      <div class="hero-terminal">
+        <div class="terminal-header">
+          <span class="terminal-dot terminal-dot--red"></span>
+          <span class="terminal-dot terminal-dot--yellow"></span>
+          <span class="terminal-dot terminal-dot--green"></span>
+          <span class="terminal-title">~ terminal</span>
+        </div>
+        <div class="terminal-body">
+          <p><span class="t-prompt">$</span> <span class="t-cmd">whoami</span></p>
+          <p class="t-output">daniel_ahumada</p>
+          <p><span class="t-prompt">$</span> <span class="t-cmd">cat stack.txt</span></p>
+          <p class="t-output">Java, Spring Boot, Node.js, React, TS</p>
+          <p><span class="t-prompt">$</span> <span class="t-cmd">cat cert.txt</span></p>
+          <p class="t-output">Google Cybersecurity Professional</p>
+          <p><span class="t-prompt">$</span> <span class="t-cmd">cat status.txt</span></p>
+          <p class="t-output">open_to_opportunities = <span class="t-true">true</span></p>
+          <p class="t-cursor-line"><span class="t-prompt">$</span> <span class="t-cursor">_</span></p>
+        </div>
       </div>
     </div>
   </section>
 
-  <section class="section" id="about">
+  <section class="section fade-in" id="about">
     <div class="container">
       <h2 class="section-title"><span class="section-num">01.</span> About Me</h2>
       <div class="about-grid">
         <div class="about-text">
-          <p>
-            Hello! I'm Daniel, a Systems &amp; Software Engineering student based in Bogot&aacute;, Colombia.
-            I enjoy building software that solves real problems and diving deep into how systems work under the hood.
-          </p>
-          <p>
-            My interests span across <strong>cloud computing</strong>, <strong>cybersecurity</strong>,
-            <strong>machine learning</strong>, and <strong>software architecture</strong>. I'm constantly learning
-            and experimenting with new technologies through academic and personal projects.
-          </p>
-          <p>Here are some technologies I've been working with recently:</p>
-          <ul class="tech-list">
-            <li>Java / Spring</li>
-            <li>Python</li>
-            <li>C# / .NET</li>
-            <li>JavaScript / SCSS</li>
-            <li>AWS</li>
-            <li>Apache Kafka</li>
-            <li>Jupyter / ML</li>
-            <li>LaTeX</li>
-          </ul>
+          <div class="about-initials">DA</div>
+          <p>I'm a Systems Engineering student at <strong>Escuela Colombiana de Ingenier&iacute;a Julio Garavito</strong>, graduating May 2027. Full-stack developer passionate about cloud computing, cybersecurity, and competitive programming.</p>
+          <p>I enjoy building software that solves real problems &mdash; from distributed systems with Kafka to machine learning models &mdash; and I'm always looking for the next challenge.</p>
         </div>
-        <div class="about-photo">
-          <div class="photo-wrapper">
-            <img src="https://github.com/A1Daniel1.png" alt="Daniel Ahumada" />
-          </div>
+      </div>
+      <div class="stats-bar">
+        <div class="stat-item">
+          <span class="stat-number">47+</span>
+          <span class="stat-label">GitHub Repos</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">6+</span>
+          <span class="stat-label">Languages</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">Google</span>
+          <span class="stat-label">Cybersecurity Cert</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">2027</span>
+          <span class="stat-label">Graduation</span>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="section section-alt" id="skills">
+  <section class="section section-alt fade-in" id="expertise">
     <div class="container">
-      <h2 class="section-title"><span class="section-num">02.</span> Skills &amp; Interests</h2>
+      <h2 class="section-title"><span class="section-num">02.</span> Expertise</h2>
       <div class="skills-grid">
-        <div class="skill-card">
+        <div class="skill-card fade-in">
           <div class="skill-icon">&lt;/&gt;</div>
-          <h3>Software Development</h3>
-          <p>Java, Python, C#, JavaScript, SQL. From backend services to full-stack web apps.</p>
+          <h3>Backend</h3>
+          <p>Java, Spring Boot, Node.js, TypeScript, PostgreSQL, Kafka</p>
         </div>
-        <div class="skill-card">
+        <div class="skill-card fade-in">
+          <div class="skill-icon">&#9672;</div>
+          <h3>Frontend</h3>
+          <p>React, TypeScript, HTML5, CSS3, SCSS</p>
+        </div>
+        <div class="skill-card fade-in">
           <div class="skill-icon">&#9729;</div>
-          <h3>Cloud Computing</h3>
-          <p>Exploring AWS services, infrastructure as code, and scalable cloud architectures.</p>
+          <h3>Cloud &amp; DevOps</h3>
+          <p>AWS, Azure, Docker, GitHub Actions, Prometheus</p>
         </div>
-        <div class="skill-card">
+        <div class="skill-card fade-in">
           <div class="skill-icon">&#128274;</div>
           <h3>Cybersecurity</h3>
-          <p>Understanding secure systems, cryptography, and best practices for protecting data.</p>
+          <p>Security Ops, OAuth2, JWT, SIEM (Google certified)</p>
         </div>
-        <div class="skill-card">
+        <div class="skill-card fade-in">
           <div class="skill-icon">&#128202;</div>
-          <h3>Data &amp; ML</h3>
-          <p>Machine learning experiments with Jupyter, data analysis, and convolutional neural networks.</p>
+          <h3>Machine Learning</h3>
+          <p>Python, TensorFlow, Scikit-learn, Pandas</p>
         </div>
-        <div class="skill-card">
-          <div class="skill-icon">&#128187;</div>
-          <h3>Observability</h3>
-          <p>Monitoring and observability with tools like Kafka, building resilient distributed systems.</p>
-        </div>
-        <div class="skill-card">
+        <div class="skill-card fade-in">
           <div class="skill-icon">&#9881;</div>
-          <h3>Architecture</h3>
-          <p>Designing clean software architectures, microservices patterns, and system design.</p>
+          <h3>Competitive Programming</h3>
+          <p>Algorithms, Data Structures, Problem Solving</p>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="section" id="projects">
+  <section class="section fade-in" id="projects">
     <div class="container">
       <h2 class="section-title"><span class="section-num">03.</span> Projects</h2>
-      <div class="projects-toolbar">
-        <input type="text" id="project-search" class="project-search" placeholder="Search projects..." />
-        <div class="project-filters" id="project-filters">
-          <button class="filter-btn active" data-lang="all">All</button>
-        </div>
+      <div class="projects-grid">
+        <article class="project-card">
+          <div class="project-card-header">
+            <span class="project-folder">&#128193;</span>
+            <a href="https://github.com/A1Daniel1/kafka" target="_blank" rel="noopener" class="project-gh-link" aria-label="View on GitHub">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            </a>
+          </div>
+          <h3><a href="https://github.com/A1Daniel1/kafka" target="_blank" rel="noopener">Kafka Event Streaming</a></h3>
+          <p>Event-driven distributed system built with Apache Kafka for real-time message streaming and processing.</p>
+          <div class="project-tags">
+            <span class="project-tag">Java</span>
+            <span class="project-tag">Kafka</span>
+            <span class="project-tag">Distributed Systems</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-card-header">
+            <span class="project-folder">&#128193;</span>
+            <a href="https://github.com/A1Daniel1/RaceGame" target="_blank" rel="noopener" class="project-gh-link" aria-label="View on GitHub">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            </a>
+          </div>
+          <h3><a href="https://github.com/A1Daniel1/RaceGame" target="_blank" rel="noopener">RaceGame</a></h3>
+          <p>Multiplayer racing game with real-time networking, built in C# with socket-based communication.</p>
+          <div class="project-tags">
+            <span class="project-tag">C#</span>
+            <span class="project-tag">Networking</span>
+            <span class="project-tag">Multiplayer</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-card-header">
+            <span class="project-folder">&#128193;</span>
+            <a href="https://github.com/A1Daniel1/Heart-Disease-Risk-Prediction" target="_blank" rel="noopener" class="project-gh-link" aria-label="View on GitHub">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            </a>
+          </div>
+          <h3><a href="https://github.com/A1Daniel1/Heart-Disease-Risk-Prediction" target="_blank" rel="noopener">Heart Disease Risk Prediction</a></h3>
+          <p>ML model for cardiac risk assessment using clinical data and predictive algorithms.</p>
+          <div class="project-tags">
+            <span class="project-tag">Python</span>
+            <span class="project-tag">ML</span>
+            <span class="project-tag">Healthcare</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-card-header">
+            <span class="project-folder">&#128193;</span>
+            <a href="https://github.com/A1Daniel1/LabObservabilidad" target="_blank" rel="noopener" class="project-gh-link" aria-label="View on GitHub">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            </a>
+          </div>
+          <h3><a href="https://github.com/A1Daniel1/LabObservabilidad" target="_blank" rel="noopener">LabObservabilidad</a></h3>
+          <p>Observability stack with Prometheus, Grafana, and Docker for monitoring distributed Java applications.</p>
+          <div class="project-tags">
+            <span class="project-tag">Java</span>
+            <span class="project-tag">Prometheus</span>
+            <span class="project-tag">Docker</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-card-header">
+            <span class="project-folder">&#128193;</span>
+            <a href="https://github.com/A1Daniel1/Exploring-Convolutional-Layers-Through-Data-and-Experiments" target="_blank" rel="noopener" class="project-gh-link" aria-label="View on GitHub">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            </a>
+          </div>
+          <h3><a href="https://github.com/A1Daniel1/Exploring-Convolutional-Layers-Through-Data-and-Experiments" target="_blank" rel="noopener">CNN Research</a></h3>
+          <p>Exploring convolutional neural network layers through data-driven experiments with TensorFlow.</p>
+          <div class="project-tags">
+            <span class="project-tag">Python</span>
+            <span class="project-tag">TensorFlow</span>
+            <span class="project-tag">Deep Learning</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-card-header">
+            <span class="project-folder">&#128193;</span>
+            <a href="https://github.com/A1Daniel1/BadIceCream" target="_blank" rel="noopener" class="project-gh-link" aria-label="View on GitHub">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            </a>
+          </div>
+          <h3><a href="https://github.com/A1Daniel1/BadIceCream" target="_blank" rel="noopener">BadIceCream</a></h3>
+          <p>Java game featuring AI-driven opponents with pathfinding and decision-making algorithms.</p>
+          <div class="project-tags">
+            <span class="project-tag">Java</span>
+            <span class="project-tag">AI</span>
+            <span class="project-tag">Game Dev</span>
+          </div>
+        </article>
       </div>
-      <div class="projects-grid" id="projects-grid">
-        <div class="loader" id="projects-loader">
-          <div class="loader-spinner"></div>
-          <p>Loading projects from GitHub...</p>
+      <div class="projects-more">
+        <a href="https://github.com/A1Daniel1?tab=repositories" target="_blank" rel="noopener" class="btn btn-secondary">View All on GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt fade-in" id="results">
+    <div class="container">
+      <h2 class="section-title"><span class="section-num">04.</span> Results</h2>
+      <div class="results-grid">
+        <div class="result-card fade-in">
+          <div class="result-icon">&#127942;</div>
+          <h3>Google Cybersecurity Professional</h3>
+          <p>Earned the Google Cybersecurity Professional Certificate, covering security operations, network security, and SIEM tools.</p>
+        </div>
+        <div class="result-card fade-in">
+          <div class="result-icon">&#127891;</div>
+          <h3>Systems Engineering Degree</h3>
+          <p>Pursuing a degree at Escuela Colombiana de Ingenier&iacute;a Julio Garavito with a focus on IT and networking infrastructure.</p>
+        </div>
+        <div class="result-card fade-in">
+          <div class="result-icon">&#128187;</div>
+          <h3>47+ Repositories</h3>
+          <p>Built and maintained 47+ repositories across 6+ programming languages, from backend systems to ML research.</p>
+        </div>
+        <div class="result-card fade-in">
+          <div class="result-icon">&#128640;</div>
+          <h3>Open to Opportunities</h3>
+          <p>Available for internships, open-source collaborations, and challenging projects that push the boundaries of software engineering.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="section section-alt" id="contact">
+  <section class="section fade-in" id="contact">
     <div class="container contact-section">
-      <h2 class="section-title center"><span class="section-num">04.</span> Get In Touch</h2>
-      <p class="contact-text">
-        I'm currently open to new opportunities and collaborations.
-        Whether you have a question, want to work together, or just want to say hi, feel free to reach out!
-      </p>
+      <h2 class="section-title center"><span class="section-num">05.</span> Get In Touch</h2>
+      <p class="contact-text">I'm open to internships, collaborations, and new challenges. Whether you have a question or want to work together, feel free to reach out!</p>
       <div class="contact-links">
-        <a href="https://github.com/A1Daniel1" target="_blank" rel="noopener" class="btn btn-primary contact-btn">
-          Say Hello
-        </a>
+        <a href="https://www.linkedin.com/in/danielahumadaleon/" target="_blank" rel="noopener" class="btn btn-primary">LinkedIn</a>
+        <a href="https://github.com/A1Daniel1" target="_blank" rel="noopener" class="btn btn-secondary">GitHub</a>
       </div>
     </div>
   </section>
