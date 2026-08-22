@@ -682,26 +682,19 @@ img { max-width: 100%; display: block; }
   color: var(--text);
 }
 
-.uni-logo-placeholder {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 60px;
-  height: 60px;
-  background: var(--accent-dim);
-  border: 2px solid var(--accent);
+.uni-logo {
+  max-width: 120px;
+  height: auto;
   border-radius: 8px;
-  font-family: var(--mono);
-  font-size: 1.2rem;
-  font-weight: 700;
-  color: var(--accent);
   transition: all 0.3s ease;
 }
 
-.uni-logo-placeholder:hover {
-  background: var(--accent);
-  color: var(--bg);
+.uni-logo:hover {
   transform: scale(1.05);
+}
+
+.result-university .uni-logo {
+  max-width: 100px;
 }
 
 .about-university {
@@ -710,12 +703,6 @@ img { max-width: 100%; display: block; }
 
 .result-university {
   margin-bottom: 0.8rem;
-}
-
-.result-university .uni-logo-placeholder {
-  width: 48px;
-  height: 48px;
-  font-size: 1rem;
 }
 
 .result-subtitle {
