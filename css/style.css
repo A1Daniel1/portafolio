@@ -1,14 +1,14 @@
 :root {
-  --bg: #1a1410;
-  --bg-alt: #1f1914;
-  --surface: #26201a;
-  --surface-hover: #332a22;
-  --border: #3d3329;
-  --text: #b8a89a;
-  --bright: #e8d5c4;
-  --white: #f5ebe0;
-  --accent: #f59e0b;
-  --accent-dim: rgba(245, 158, 11, 0.12);
+  --bg: #0d1b2a;
+  --bg-alt: #111f33;
+  --surface: #1b2838;
+  --surface-hover: #243447;
+  --border: #2a3a4e;
+  --text: #8b9bb4;
+  --bright: #d4dee8;
+  --white: #e8f0f8;
+  --accent: #ff6b35;
+  --accent-dim: rgba(255, 107, 53, 0.12);
   --font: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
   --mono: 'JetBrains Mono', 'Fira Code', monospace;
   --nav-h: 70px;
@@ -74,7 +74,7 @@ img { max-width: 100%; display: block; }
   left: 0;
   right: 0;
   z-index: 100;
-  background: rgba(26, 20, 16, 0.92);
+  background: rgba(13, 27, 42, 0.92);
   backdrop-filter: blur(12px);
   border-bottom: 1px solid transparent;
   transition: border-color 0.3s, box-shadow 0.3s;
@@ -256,7 +256,7 @@ img { max-width: 100%; display: block; }
   background: var(--accent);
   color: var(--bg);
   transform: translateY(-2px);
-  box-shadow: 0 4px 20px rgba(245, 158, 11, 0.25);
+  box-shadow: 0 4px 20px rgba(255, 107, 53, 0.25);
 }
 
 .btn-secondary {
@@ -397,19 +397,17 @@ img { max-width: 100%; display: block; }
 .skill-card:hover {
   transform: translateY(-4px);
   border-color: var(--accent);
-  box-shadow: 0 8px 30px rgba(245, 158, 11, 0.1);
+  box-shadow: 0 8px 30px rgba(255, 107, 53, 0.1);
 }
 
 .skill-icon {
-  font-family: var(--mono);
-  font-size: 1.2rem;
-  font-weight: 700;
+  font-size: 2rem;
   margin-bottom: 0.8rem;
   color: var(--accent);
-  background: var(--accent-dim);
-  display: inline-block;
-  padding: 0.3rem 0.6rem;
-  border-radius: 4px;
+}
+
+.skill-icon i {
+  font-size: 2rem;
 }
 
 .skill-card h3 {
@@ -442,7 +440,7 @@ img { max-width: 100%; display: block; }
 .project-card:hover {
   transform: translateY(-4px);
   border-color: var(--accent);
-  box-shadow: 0 8px 30px rgba(245, 158, 11, 0.1);
+  box-shadow: 0 8px 30px rgba(255, 107, 53, 0.1);
 }
 
 .project-card-header {
@@ -519,7 +517,7 @@ img { max-width: 100%; display: block; }
 .result-card:hover {
   transform: translateY(-4px);
   border-color: var(--accent);
-  box-shadow: 0 8px 30px rgba(245, 158, 11, 0.1);
+  box-shadow: 0 8px 30px rgba(255, 107, 53, 0.1);
 }
 
 .result-card h3 {
@@ -559,6 +557,72 @@ img { max-width: 100%; display: block; }
   font-family: var(--mono);
   font-size: 0.8rem;
   color: var(--text);
+}
+
+.uni-logo {
+  height: 40px;
+  width: auto;
+  filter: brightness(0) invert(1);
+  opacity: 0.7;
+  transition: opacity 0.3s;
+}
+
+.uni-logo:hover {
+  opacity: 1;
+}
+
+.about-university {
+  margin-top: 1.5rem;
+}
+
+.result-university {
+  margin-bottom: 0.8rem;
+}
+
+.result-university .uni-logo {
+  height: 32px;
+}
+
+.result-subtitle {
+  font-family: var(--mono);
+  font-size: 0.8rem;
+  color: var(--accent);
+  margin-bottom: 0.5rem;
+}
+
+.contact-email {
+  font-family: var(--mono);
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.contact-email a {
+  color: var(--accent);
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s;
+}
+
+.contact-email a:hover {
+  border-bottom-color: var(--accent);
+}
+
+.terminal-icons {
+  display: flex;
+  gap: 0.8rem;
+  padding: 0.75rem 1.25rem;
+  border-top: 1px solid var(--border);
+  background: rgba(0, 0, 0, 0.15);
+}
+
+.terminal-icons i {
+  font-size: 1.4rem;
+  opacity: 0.7;
+  transition: opacity 0.2s, transform 0.2s;
+}
+
+.terminal-icons i:hover {
+  opacity: 1;
+  transform: scale(1.2);
 }
 
 .fade-in {
