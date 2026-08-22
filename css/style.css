@@ -683,9 +683,9 @@ img { max-width: 100%; display: block; }
 }
 
 .uni-logo {
-  max-width: 120px;
+  max-width: 60px;
   height: auto;
-  border-radius: 8px;
+  border-radius: 12px;
   transition: all 0.3s ease;
 }
 
@@ -694,7 +694,7 @@ img { max-width: 100%; display: block; }
 }
 
 .result-university .uni-logo {
-  max-width: 100px;
+  max-width: 50px;
 }
 
 .about-university {
