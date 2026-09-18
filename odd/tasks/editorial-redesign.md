@@ -134,7 +134,7 @@ Scale: hero name `clamp(2.75rem, 7vw, 5rem)` / lh `0.98`; section title
       with `aria-expanded` / `aria-controls`.
 - [ ] **T4 — Hero.** Remove `.hero-bg` gradient and the fake terminal entirely. New hero:
       eyebrow, serif `h1`, lead paragraph, two text links, and a mono meta definition
-      list (Location, Graduating, Focus, Status).
+      list (Education, Focus, Graduating, Status).
 - [ ] **T5 — About + facts.** Two tightened paragraphs; university logo rendered honestly
       at a readable size with a caption. Replace the glowing stats box with a hairline
       definition list.
@@ -173,14 +173,16 @@ Scale: hero name `clamp(2.75rem, 7vw, 5rem)` / lh `0.98`; section title
 | T2 — CSS foundation | done | reset, body/type defaults, `.container`, `--section-y` rhythm, hairline rules, underline links, `:focus-visible` ring, `prefers-reduced-motion` block |
 | T3 — Nav | done | wordmark, text links with underline hover, `aria-current="true"` active state, mobile panel with `aria-expanded` / `aria-controls`, Escape + outside click + link click |
 | T4 — Hero | done | `.hero-bg` gradient and fake terminal removed; eyebrow, serif `h1`, lead, two text links, mono meta `dl` |
-| T5 — About + facts | done | two tightened paragraphs; university logo at 48px with mono caption; glowing stats box replaced with hairline `dl` |
+| T5 — About + facts | done | two tightened paragraphs; university logo at 48px linked to `escuelaing.edu.co` with a serif italic caption; glowing stats box replaced with hairline `dl` |
 | T6 — Expertise | done | three mono group headers, hairline `term + description` rows, no icons |
 | T7 — Featured projects | done | shared two-column grid; images `aspect-ratio: 16 / 10` with `width`/`height`/`loading`/`decoding`; CNN typographic 81.11% panel; TechCup `object-fit: contain` on `--paper-sunk` |
-| T8 — More projects | done | four hairline-separated rows (serif title, mono stack, description, arrow link); no thumbnails or cards |
-| T9 — Results + contact + footer | done | hairline results list; `--paper-sunk` Looking for note; oversized serif email link; quiet mono footer |
-| T10 — JavaScript | done | `js/main.js` rewritten: scrolled class, mobile menu state, `aria-current` via `IntersectionObserver`; `.fade-in` observer deleted; all element access guarded |
+| T8 — More projects | done | four rows separated by vertical space instead of rules (serif title, mono stack, description, arrow link); no thumbnails or cards |
+| T9 — Results + contact + footer | done | hairline results list; `--paper-sunk` Looking for note; oversized serif email link; quiet footer |
+| T10 — JavaScript | done | `js/main.js` rewritten: scrolled class, mobile menu state, `aria-current` via `IntersectionObserver`, menu reset on desktop via `matchMedia`; `.fade-in` observer deleted; all element access guarded |
 | T11 — Verification | done | pattern scan A returns zero matches; checks B/C/D/E pass; heading order `h1 -> h2 -> h3`; all referenced assets exist |
-| T12 — Commit | done | single work-unit commit on `feat/editorial-redesign`, base boundary `0b3321c`, commit `6bb66fc`; no push, no PR |
+| T12 — Commit | done | code commit `77011ea` on `feat/editorial-redesign`, base boundary `0b3321c`; no push, no PR |
+
+> Note: the Progress table is updated in a doc-only follow-up commit, so the recorded code commit hash stays resolvable.
 
 ## Next step
 
