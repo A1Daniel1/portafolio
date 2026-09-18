@@ -3,21 +3,28 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Daniel Ahumada | Portfolio</title>
-  <meta name="description" content="Systems Engineering student focused on building reliable, scalable software across the stack." />
+  <title>Daniel Ahumada — Systems Engineering Student</title>
+  <meta name="description" content="Portfolio of Daniel Ahumada — systems engineering student graduating May 2027. Distributed backends, machine learning, and systems security." />
+  <meta name="theme-color" content="#faf8f3" />
+  <meta property="og:title" content="Daniel Ahumada — Systems Engineering Student" />
+  <meta property="og:description" content="Portfolio of Daniel Ahumada — systems engineering student graduating May 2027. Distributed backends, machine learning, and systems security." />
+  <meta property="og:type" content="website" />
   <link rel="icon" type="image/jpeg" href="assets/icon.jpg" />
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Newsreader:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  <nav class="nav" id="nav">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <nav class="nav" id="nav" aria-label="Primary">
     <div class="nav-container">
-      <a href="#hero" class="nav-logo">DA</a>
-      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
-        <span></span><span></span><span></span>
+      <a class="nav-wordmark" href="#">Daniel Ahumada</a>
+      <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Menu">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
       </button>
       <ul class="nav-links" id="nav-links">
         <li><a href="#about">About</a></li>
@@ -25,336 +32,250 @@
         <li><a href="#projects">Projects</a></li>
         <li><a href="#results">Results</a></li>
         <li><a href="#contact">Contact</a></li>
-        <li class="nav-socials">
-          <a href="https://github.com/A1Daniel1" target="_blank" rel="noopener" class="nav-social-link">GH</a>
-          <a href="https://www.linkedin.com/in/danielahumadaleon/" target="_blank" rel="noopener" class="nav-social-link">LI</a>
-        </li>
       </ul>
     </div>
   </nav>
 
-  <section class="hero" id="hero">
-    <div class="hero-bg"></div>
-    <div class="hero-content">
-      <div class="hero-text">
-        <p class="hero-greeting">Hi, I'm</p>
-        <h1 class="hero-name">Daniel Ahumada.</h1>
-        <h2 class="hero-tagline">Software Architecture. AI. Cybersecurity.</h2>
-        <p class="hero-desc">Systems engineer designing scalable architectures, building intelligent systems, and securing digital infrastructure.</p>
-        <div class="hero-actions">
-          <a href="#projects" class="btn btn-primary">View my work</a>
-          <a href="#contact" class="btn btn-secondary">Get in touch</a>
-        </div>
-      </div>
-      <div class="hero-terminal">
-        <div class="terminal-header">
-          <span class="terminal-dot terminal-dot--red"></span>
-          <span class="terminal-dot terminal-dot--yellow"></span>
-          <span class="terminal-dot terminal-dot--green"></span>
-          <span class="terminal-title">~ terminal</span>
-        </div>
-        <div class="terminal-body">
-          <p><span class="t-prompt">$</span> <span class="t-cmd">whoami</span></p>
-          <p class="t-output">daniel_ahumada</p>
-          <p><span class="t-prompt">$</span> <span class="t-cmd">cat focus.txt</span></p>
-          <p class="t-output">Software Architecture | AI Engineering | Cybersecurity</p>
-          <p><span class="t-prompt">$</span> <span class="t-cmd">cat status.txt</span></p>
-          <p class="t-output">open_to_opportunities = <span class="t-true">true</span></p>
-          <p class="t-cursor-line"><span class="t-prompt">$</span> <span class="t-cursor">_</span></p>
-        </div>
-        <div class="terminal-icons">
-          <i class="devicon-java-plain colored" title="Java"></i>
-          <i class="devicon-spring-original colored" title="Spring"></i>
-          <i class="devicon-nodejs-plain colored" title="Node.js"></i>
-          <i class="devicon-typescript-plain colored" title="TypeScript"></i>
-          <i class="devicon-react-original colored" title="React"></i>
-          <i class="devicon-python-plain colored" title="Python"></i>
-          <i class="devicon-amazonwebservices-plain colored" title="AWS"></i>
-          <i class="devicon-docker-plain colored" title="Docker"></i>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section fade-in" id="about">
-    <div class="container">
-      <h2 class="section-title"><span class="section-num">01.</span> About Me</h2>
-      <div class="about-grid">
-        <div class="about-text">
-          <div class="about-initials">DA</div>
-          <p>I'm a systems engineer focused on three core pillars: <strong>software architecture</strong>, <strong>artificial intelligence</strong>, and <strong>cybersecurity</strong>. I design and build scalable distributed systems, implement intelligent solutions with machine learning, and secure digital infrastructure.</p>
-          <p>My work spans from microservices architectures with Spring Boot and Kafka, to deep learning research with TensorFlow, to security implementations and observability stacks. I'm passionate about building systems that are not just functional, but architecturally sound, intelligent, and secure.</p>
-          <div class="about-university">
-            <a href="https://www.escuelaing.edu.co" target="_blank" rel="noopener">
-              <img src="assets/escuela_colombiana_de_ingenieria_logo.jpg" alt="Escuela Colombiana de Ingenieria" class="uni-logo" />
-            </a>
+  <main id="main">
+    <section class="hero">
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-lead">
+            <p class="eyebrow">Systems engineering student</p>
+            <h1>Daniel Ahumada</h1>
+            <p class="hero-intro">Systems engineering student, graduating May 2027. I build distributed backends, train machine learning models, and study how systems fail under attack.</p>
+            <p class="hero-actions">
+              <a href="#projects">View projects</a>
+              <a href="#contact">Get in touch</a>
+            </p>
           </div>
-        </div>
-      </div>
-      <div class="stats-bar">
-        <div class="stat-item">
-          <span class="stat-number">47+</span>
-          <span class="stat-label">GitHub Repos</span>
-        </div>
-        <div class="stat-item">
-          <span class="stat-number">6+</span>
-          <span class="stat-label">Languages</span>
-        </div>
-        <div class="stat-item">
-          <span class="stat-number">3</span>
-          <span class="stat-label">Certifications</span>
-        </div>
-        <div class="stat-item">
-          <span class="stat-number">2027</span>
-          <span class="stat-label">Graduation</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section section-alt fade-in" id="expertise">
-    <div class="container">
-      <h2 class="section-title"><span class="section-num">02.</span> Expertise</h2>
-      
-      <h3 class="expertise-category">Primary Focus</h3>
-      <div class="skills-grid">
-        <div class="skill-card fade-in">
-          <div class="skill-icon"><i class="devicon-spring-original colored"></i></div>
-          <h3>Software Architecture</h3>
-          <p>Microservices, distributed systems, event-driven architectures, API design, scalability patterns</p>
-        </div>
-        <div class="skill-card fade-in">
-          <div class="skill-icon"><i class="devicon-python-plain colored"></i></div>
-          <h3>Artificial Intelligence</h3>
-          <p>Machine learning, deep learning, neural networks, computer vision, predictive modeling</p>
-        </div>
-        <div class="skill-card fade-in">
-          <div class="skill-icon"><i class="devicon-googlecloud-plain colored"></i></div>
-          <h3>Cybersecurity</h3>
-          <p>Security operations, threat analysis, SIEM, authentication, secure coding practices</p>
-        </div>
-      </div>
-
-      <h3 class="expertise-category">Engineering</h3>
-      <div class="skills-grid">
-        <div class="skill-card fade-in">
-          <div class="skill-icon"><i class="devicon-java-plain colored"></i></div>
-          <h3>Backend</h3>
-          <p>Java, Spring Boot, Node.js, TypeScript, PostgreSQL, Kafka</p>
-        </div>
-        <div class="skill-card fade-in">
-          <div class="skill-icon"><i class="devicon-react-original colored"></i></div>
-          <h3>Frontend</h3>
-          <p>React, TypeScript, responsive design, modern UI/UX</p>
-        </div>
-      </div>
-
-      <h3 class="expertise-category">Infrastructure</h3>
-      <div class="skills-grid">
-        <div class="skill-card fade-in">
-          <div class="skill-icon"><i class="devicon-docker-plain colored"></i></div>
-          <h3>Cloud &amp; DevOps</h3>
-          <p>AWS, Azure, Docker, CI/CD, observability, monitoring</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section fade-in" id="projects">
-    <div class="container">
-      <h2 class="section-title"><span class="section-num">03.</span> Featured Projects</h2>
-
-      <div class="featured-projects">
-        <article class="featured-card fade-in">
-          <div class="featured-image">
-            <img src="assets/racegame.png" alt="RaceGame" class="project-preview" />
-          </div>
-          <div class="featured-content">
-            <div class="featured-header">
-              <span class="project-badge">Featured</span>
-              <a href="https://github.com/A1Daniel1/RaceGame" target="_blank" rel="noopener" class="project-gh-link">View Code</a>
+          <dl class="hero-meta">
+            <div class="meta-row">
+              <dt class="meta">Education</dt>
+              <dd>Escuela Colombiana de Ingeniería Julio Garavito</dd>
             </div>
-            <h3><a href="https://github.com/A1Daniel1/RaceGame" target="_blank" rel="noopener">RaceGame</a></h3>
-            <p class="featured-desc">Built a real-time multiplayer racing game with socket-based networking in C#. Designed client-server architecture with state synchronization and interpolation to handle latency. Achieved sub-50ms response time for up to 8 concurrent players.</p>
-            <div class="project-tags">
-              <span class="project-tag">C#</span>
-              <span class="project-tag">Networking</span>
-              <span class="project-tag">Sockets</span>
-              <span class="project-tag">Multiplayer</span>
+            <div class="meta-row">
+              <dt class="meta">Focus</dt>
+              <dd>Software architecture · AI · Cybersecurity</dd>
             </div>
-          </div>
-        </article>
-
-        <article class="featured-card fade-in">
-          <div class="featured-image">
-            <i class="devicon-tensorflow-original colored featured-icon"></i>
-          </div>
-          <div class="featured-content">
-            <div class="featured-header">
-              <span class="project-badge">AI Research</span>
-              <a href="https://github.com/A1Daniel1/Exploring-Convolutional-Layers-Through-Data-and-Experiments" target="_blank" rel="noopener" class="project-gh-link">View Code</a>
+            <div class="meta-row">
+              <dt class="meta">Graduating</dt>
+              <dd>May 2027</dd>
             </div>
-            <h3><a href="https://github.com/A1Daniel1/Exploring-Convolutional-Layers-Through-Data-and-Experiments" target="_blank" rel="noopener">CNN Layer Research</a></h3>
-            <p class="featured-desc">Conducted systematic experiments on convolutional neural network behavior using TensorFlow. Tested kernel sizes (3x3, 5x5) and layer depths to analyze feature extraction patterns. Achieved 81.11% validation accuracy with optimal 3x3 configuration.</p>
-            <div class="project-tags">
-              <span class="project-tag">Python</span>
-              <span class="project-tag">TensorFlow</span>
-              <span class="project-tag">Computer Vision</span>
-              <span class="project-tag">Research</span>
+            <div class="meta-row">
+              <dt class="meta">Status</dt>
+              <dd>Open to 2027 internships</dd>
             </div>
-          </div>
-        </article>
-
-        <article class="featured-card fade-in">
-          <div class="featured-image">
-            <img src="assets/techcup.png" alt="TechCup" class="project-preview" />
-          </div>
-          <div class="featured-content">
-            <div class="featured-header">
-              <span class="project-badge">Architecture</span>
-              <a href="https://github.com/techcup-eci" target="_blank" rel="noopener" class="project-gh-link">View Code</a>
-            </div>
-            <h3><a href="https://github.com/techcup-eci" target="_blank" rel="noopener">TechCup Platform</a></h3>
-            <p class="featured-desc">Designed a distributed microservices platform for university tournament management. Built Spring Boot services for authentication, users, teams, and tournament logic, integrated with a React frontend. Team collaboration project.</p>
-            <div class="project-tags">
-              <span class="project-tag">Java</span>
-              <span class="project-tag">Spring Boot</span>
-              <span class="project-tag">Microservices</span>
-              <span class="project-tag">React</span>
-              <span class="project-tag">PostgreSQL</span>
-            </div>
-          </div>
-        </article>
-      </div>
-
-      <h3 class="section-subtitle">More Projects</h3>
-      <div class="projects-grid">
-        <article class="project-card">
-          <div class="project-image-thumb">
-            <img src="assets/bitcoin.png" alt="AI Broker" class="project-thumb" />
-          </div>
-          <div class="project-card-header">
-            <span class="project-folder">//</span>
-            <a href="https://github.com/A1Daniel1/AI-Broker" target="_blank" rel="noopener" class="project-gh-link" aria-label="View on GitHub">
-              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
-            </a>
-          </div>
-          <h3><a href="https://github.com/A1Daniel1/AI-Broker" target="_blank" rel="noopener">AI Broker</a></h3>
-          <p>Predictive model analyzing financial market patterns and investment opportunities using historical trading data and ML algorithms.</p>
-          <div class="project-tags">
-            <span class="project-tag">Python</span>
-            <span class="project-tag">ML</span>
-            <span class="project-tag">Finance</span>
-          </div>
-        </article>
-
-        <article class="project-card">
-          <div class="project-card-header">
-            <span class="project-folder">//</span>
-            <a href="https://github.com/A1Daniel1/Heart-Disease-Risk-Prediction" target="_blank" rel="noopener" class="project-gh-link" aria-label="View on GitHub">
-              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
-            </a>
-          </div>
-          <h3><a href="https://github.com/A1Daniel1/Heart-Disease-Risk-Prediction" target="_blank" rel="noopener">Heart Disease Risk Prediction</a></h3>
-          <p>ML model for cardiac risk assessment using clinical data and predictive algorithms for healthcare applications.</p>
-          <div class="project-tags">
-            <span class="project-tag">Python</span>
-            <span class="project-tag">ML</span>
-            <span class="project-tag">Healthcare</span>
-          </div>
-        </article>
-
-        <article class="project-card">
-          <div class="project-card-header">
-            <span class="project-folder">//</span>
-            <a href="https://github.com/A1Daniel1/Stellar-Luminosity" target="_blank" rel="noopener" class="project-gh-link" aria-label="View on GitHub">
-              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
-            </a>
-          </div>
-          <h3><a href="https://github.com/A1Daniel1/Stellar-Luminosity" target="_blank" rel="noopener">Stellar Luminosity</a></h3>
-          <p>Data science project analyzing stellar luminosity patterns using machine learning and astronomical data analysis.</p>
-          <div class="project-tags">
-            <span class="project-tag">Python</span>
-            <span class="project-tag">Data Science</span>
-            <span class="project-tag">ML</span>
-          </div>
-        </article>
-
-        <article class="project-card">
-          <div class="project-image-thumb">
-            <img src="assets/badicecream.png" alt="BadIceCream" class="project-thumb" />
-          </div>
-          <div class="project-card-header">
-            <span class="project-folder">//</span>
-            <a href="https://github.com/A1Daniel1/BadIceCream" target="_blank" rel="noopener" class="project-gh-link" aria-label="View on GitHub">
-              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
-            </a>
-          </div>
-          <h3><a href="https://github.com/A1Daniel1/BadIceCream" target="_blank" rel="noopener">BadIceCream</a></h3>
-          <p>Java game with AI-driven opponents featuring A* pathfinding, collision detection, and dynamic difficulty progression.</p>
-          <div class="project-tags">
-            <span class="project-tag">Java</span>
-            <span class="project-tag">AI</span>
-            <span class="project-tag">Game Dev</span>
-          </div>
-        </article>
-      </div>
-      <div class="projects-more">
-        <a href="https://github.com/A1Daniel1?tab=repositories" target="_blank" rel="noopener" class="btn btn-secondary">View All on GitHub</a>
-      </div>
-    </div>
-  </section>
-
-  <section class="section section-alt fade-in" id="results">
-    <div class="container">
-      <h2 class="section-title"><span class="section-num">04.</span> Results</h2>
-      <div class="results-grid">
-        <div class="result-card fade-in">
-          <h3>Systems Engineering Degree</h3>
-          <div class="result-university">
-            <a href="https://www.escuelaing.edu.co" target="_blank" rel="noopener">
-              <img src="assets/escuela_colombiana_de_ingenieria_logo.jpg" alt="Escuela Colombiana de Ingenieria" class="uni-logo" />
-            </a>
-          </div>
-          <p>Escuela Colombiana de Ingenier&iacute;a Julio Garavito. Focus on software architecture, AI, and cybersecurity. Graduating May 2027.</p>
-        </div>
-        <div class="result-card fade-in">
-          <h3>6+ ML Models Trained</h3>
-          <p>Built predictive models across healthcare, finance, and astronomy. Best result: 81.11% accuracy on CNN research with optimized kernel configuration.</p>
-        </div>
-        <div class="result-card fade-in">
-          <h3>EF SET Certificate</h3>
-          <p class="result-subtitle">English Proficiency - B2 Level</p>
-          <p><a href="https://cert.efset.org/es/1PGn5T" target="_blank" rel="noopener">View Certificate</a></p>
-        </div>
-        <div class="result-card fade-in">
-          <h3>Coursera Specialization</h3>
-          <p class="result-subtitle">Professional Development</p>
-          <p><a href="https://www.coursera.org/account/accomplishments/specialization/S4OOZIRRLVFT" target="_blank" rel="noopener">View Specialization</a></p>
+          </dl>
         </div>
       </div>
+    </section>
 
-      <div class="looking-for fade-in">
-        <h3>Looking For</h3>
-        <p class="looking-text">Software Engineering / AI / Cybersecurity internships for 2027. Open to remote and international opportunities.</p>
+    <section class="section" id="about">
+      <div class="container">
+        <h2 class="section-title">About</h2>
+        <div class="about-grid">
+          <div class="prose">
+            <p>I study systems engineering at Escuela Colombiana de Ingeniería Julio Garavito. My work sits around three questions: how software is structured, how it learns from data, and how it holds up when someone tries to break it.</p>
+            <p>In practice that has meant Java and Spring Boot microservices for a university tournament platform, socket-based networking for a real-time multiplayer game in C#, and a set of machine learning experiments — including a CNN study that reached 81.11% validation accuracy after testing kernel sizes and layer depths.</p>
+          </div>
+          <div class="about-side">
+            <dl class="facts">
+              <div class="fact">
+                <dt class="fact-value">47+</dt>
+                <dd class="fact-label">public repositories</dd>
+              </div>
+              <div class="fact">
+                <dt class="fact-value">6+</dt>
+                <dd class="fact-label">languages</dd>
+              </div>
+              <div class="fact">
+                <dt class="fact-value">3</dt>
+                <dd class="fact-label">certifications</dd>
+              </div>
+              <div class="fact">
+                <dt class="fact-value">May 2027</dt>
+                <dd class="fact-label">graduation</dd>
+              </div>
+            </dl>
+            <figure class="uni">
+              <img src="assets/escuela_colombiana_de_ingenieria_logo.jpg" alt="Escuela Colombiana de Ingeniería Julio Garavito crest" width="200" height="200" loading="lazy" decoding="async" />
+              <figcaption>Escuela Colombiana de Ingeniería</figcaption>
+            </figure>
+          </div>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="section fade-in" id="contact">
-    <div class="container contact-section">
-      <h2 class="section-title center"><span class="section-num">05.</span> Get In Touch</h2>
-      <p class="contact-text">I'm open to internships, collaborations, and new challenges. Whether you have a question or want to work together, feel free to reach out!</p>
-      <p class="contact-email"><a href="mailto:danielahumada071@gmail.com">danielahumada071@gmail.com</a></p>
-      <div class="contact-links">
-        <a href="https://www.linkedin.com/in/danielahumadaleon/" target="_blank" rel="noopener" class="btn btn-primary">LinkedIn</a>
-        <a href="https://github.com/A1Daniel1" target="_blank" rel="noopener" class="btn btn-secondary">GitHub</a>
+    <section class="section" id="expertise">
+      <div class="container">
+        <h2 class="section-title">Expertise</h2>
+
+        <h3 class="group-label">Primary focus</h3>
+        <dl class="index-list">
+          <div class="index-row">
+            <dt>Software Architecture</dt>
+            <dd>Microservices, distributed systems, event-driven architecture, API design, and scalability patterns.</dd>
+          </div>
+          <div class="index-row">
+            <dt>Artificial Intelligence</dt>
+            <dd>Machine learning, deep learning, neural networks, computer vision, and predictive modeling.</dd>
+          </div>
+          <div class="index-row">
+            <dt>Cybersecurity</dt>
+            <dd>Security operations, threat analysis, SIEM, authentication, and secure coding practices.</dd>
+          </div>
+        </dl>
+
+        <h3 class="group-label">Engineering</h3>
+        <dl class="index-list">
+          <div class="index-row">
+            <dt>Backend</dt>
+            <dd>Java, Spring Boot, Node.js, TypeScript, PostgreSQL, Kafka.</dd>
+          </div>
+          <div class="index-row">
+            <dt>Frontend</dt>
+            <dd>React, TypeScript, responsive design, and accessible interfaces.</dd>
+          </div>
+        </dl>
+
+        <h3 class="group-label">Infrastructure</h3>
+        <dl class="index-list">
+          <div class="index-row">
+            <dt>Cloud &amp; DevOps</dt>
+            <dd>AWS, Azure, Docker, CI/CD pipelines, observability, and monitoring.</dd>
+          </div>
+        </dl>
       </div>
-    </div>
-  </section>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="container">
+        <h2 class="section-title">Featured Projects</h2>
+
+        <article class="featured">
+          <div class="project-media">
+            <img src="assets/racegame.png" alt="RaceGame — real-time multiplayer racing game" width="329" height="287" loading="lazy" decoding="async" />
+          </div>
+          <div class="featured-body">
+            <p class="eyebrow">Featured</p>
+            <h3><a href="https://github.com/A1Daniel1/RaceGame" target="_blank" rel="noopener noreferrer">RaceGame</a></h3>
+            <p class="featured-desc">Real-time multiplayer racing game built on socket networking in C#. Client-server architecture with state synchronization and interpolation to absorb latency — sub-50ms response for up to 8 concurrent players.</p>
+            <p class="tags">C# · Networking · Sockets · Multiplayer</p>
+          </div>
+        </article>
+
+        <article class="featured">
+          <div class="project-panel">
+            <p class="panel-figure">81.11%</p>
+            <p class="panel-caption">best validation accuracy</p>
+          </div>
+          <div class="featured-body">
+            <p class="eyebrow">AI research</p>
+            <h3><a href="https://github.com/A1Daniel1/Exploring-Convolutional-Layers-Through-Data-and-Experiments" target="_blank" rel="noopener noreferrer">Exploring Convolutional Layers</a></h3>
+            <p class="featured-desc">Systematic TensorFlow experiments on how kernel size and layer depth change feature extraction in convolutional networks. The best 3×3 configuration reached 81.11% validation accuracy.</p>
+            <p class="tags">Python · TensorFlow · Computer vision · Research</p>
+          </div>
+        </article>
+
+        <article class="featured">
+          <div class="project-media project-media--logo">
+            <img src="assets/techcup.png" alt="TechCup Platform logo" width="200" height="200" loading="lazy" decoding="async" />
+          </div>
+          <div class="featured-body">
+            <p class="eyebrow">Architecture</p>
+            <h3><a href="https://github.com/techcup-eci" target="_blank" rel="noopener noreferrer">TechCup Platform</a></h3>
+            <p class="featured-desc">Distributed microservices platform for university tournament management. Spring Boot services for authentication, users, teams, and tournament logic, behind a React frontend. Built with a team.</p>
+            <p class="tags">Java · Spring Boot · Microservices · React · PostgreSQL</p>
+          </div>
+        </article>
+
+        <h3 class="more-heading">More Projects</h3>
+        <ul class="more-list">
+          <li class="more-row">
+            <div class="more-head">
+              <p class="more-title">AI Broker</p>
+              <p class="more-stack">Python · ML · Finance</p>
+            </div>
+            <p class="more-desc">Predictive model for financial market patterns using historical trading data.</p>
+            <a class="row-arrow" href="https://github.com/A1Daniel1/AI-Broker" target="_blank" rel="noopener noreferrer" aria-label="AI Broker repository on GitHub"><span aria-hidden="true">→</span></a>
+          </li>
+          <li class="more-row">
+            <div class="more-head">
+              <p class="more-title">Heart Disease Risk Prediction</p>
+              <p class="more-stack">Python · ML · Healthcare</p>
+            </div>
+            <p class="more-desc">ML model for cardiac risk assessment from clinical data.</p>
+            <a class="row-arrow" href="https://github.com/A1Daniel1/Heart-Disease-Risk-Prediction" target="_blank" rel="noopener noreferrer" aria-label="Heart Disease Risk Prediction repository on GitHub"><span aria-hidden="true">→</span></a>
+          </li>
+          <li class="more-row">
+            <div class="more-head">
+              <p class="more-title">Stellar Luminosity</p>
+              <p class="more-stack">Python · Data science · ML</p>
+            </div>
+            <p class="more-desc">Stellar luminosity analysis with machine learning on astronomical data.</p>
+            <a class="row-arrow" href="https://github.com/A1Daniel1/Stellar-Luminosity" target="_blank" rel="noopener noreferrer" aria-label="Stellar Luminosity repository on GitHub"><span aria-hidden="true">→</span></a>
+          </li>
+          <li class="more-row">
+            <div class="more-head">
+              <p class="more-title">BadIceCream</p>
+              <p class="more-stack">Java · AI · Game dev</p>
+            </div>
+            <p class="more-desc">Java game with AI opponents using A* pathfinding, collision detection, and progressive difficulty.</p>
+            <a class="row-arrow" href="https://github.com/A1Daniel1/BadIceCream" target="_blank" rel="noopener noreferrer" aria-label="BadIceCream repository on GitHub"><span aria-hidden="true">→</span></a>
+          </li>
+        </ul>
+        <p class="more-all"><a href="https://github.com/A1Daniel1?tab=repositories" target="_blank" rel="noopener noreferrer">All repositories on GitHub</a></p>
+      </div>
+    </section>
+
+    <section class="section" id="results">
+      <div class="container">
+        <h2 class="section-title">Results</h2>
+        <ul class="results-list">
+          <li class="result-item">
+            <h3>B.Sc. Systems Engineering</h3>
+            <p>Escuela Colombiana de Ingeniería Julio Garavito · expected May 2027</p>
+          </li>
+          <li class="result-item">
+            <h3>Machine learning models trained</h3>
+            <p>Healthcare, finance, and astronomy. Best result: 81.11% validation accuracy on the CNN kernel study.</p>
+          </li>
+          <li class="result-item">
+            <h3>EF SET English Certificate</h3>
+            <p>B2 · <a href="https://cert.efset.org/es/1PGn5T" target="_blank" rel="noopener noreferrer">View certificate</a></p>
+          </li>
+          <li class="result-item">
+            <h3>Coursera Specialization</h3>
+            <p><a href="https://www.coursera.org/account/accomplishments/specialization/S4OOZIRRLVFT" target="_blank" rel="noopener noreferrer">View specialization</a></p>
+          </li>
+        </ul>
+
+        <div class="note">
+          <h3>Looking for</h3>
+          <p>Software engineering, AI, or cybersecurity internships starting 2027. Remote and international both work.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container">
+        <h2 class="section-title">Get in touch</h2>
+        <p class="contact-intro">The fastest way to reach me is email.</p>
+        <p class="contact-email"><a href="mailto:danielahumada071@gmail.com">danielahumada071@gmail.com</a></p>
+        <p class="contact-links">
+          <a href="https://www.linkedin.com/in/danielahumadaleon/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a href="https://github.com/A1Daniel1" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </p>
+      </div>
+    </section>
+  </main>
 
   <footer class="footer">
-    <p>Designed &amp; Built by Daniel Ahumada</p>
+    <div class="container">
+      <p>Daniel Ahumada — 2026</p>
+      <p>Hand-written HTML and CSS — no framework, no build step.</p>
+    </div>
   </footer>
 
   <script src="js/main.js"></script>
