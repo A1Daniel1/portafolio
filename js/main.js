@@ -54,6 +54,24 @@
         setMenuOpen(false);
       }
     });
+
+    /* Reset the menu when the layout switches to the desktop nav.
+       Mirrors the CSS nav breakpoint (max-width: 760px). */
+    if (typeof window.matchMedia === 'function') {
+      var desktopLayout = window.matchMedia('(min-width: 760.01px)');
+
+      var closeOnDesktop = function (event) {
+        if (event.matches) {
+          setMenuOpen(false);
+        }
+      };
+
+      if (typeof desktopLayout.addEventListener === 'function') {
+        desktopLayout.addEventListener('change', closeOnDesktop);
+      } else if (typeof desktopLayout.addListener === 'function') {
+        desktopLayout.addListener(closeOnDesktop);
+      }
+    }
   }
 
   /* 3. Active section in nav ---------------------------------------------- */

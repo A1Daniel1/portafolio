@@ -152,10 +152,9 @@ a:hover {
 
 .meta {
   font-family: var(--font-mono);
-  font-size: 0.78rem;
+  font-size: 0.8rem;
   font-weight: 400;
-  text-transform: uppercase;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.04em;
   color: var(--ink-mute);
 }
 
@@ -335,10 +334,7 @@ a:hover {
 
 .fact-label {
   margin: 0;
-  font-family: var(--font-mono);
-  font-size: 0.78rem;
-  text-transform: uppercase;
-  letter-spacing: 0.12em;
+  font-size: 0.9rem;
   color: var(--ink-mute);
 }
 
@@ -356,9 +352,9 @@ a:hover {
 }
 
 .uni figcaption {
-  font-family: var(--font-mono);
-  font-size: 0.78rem;
-  letter-spacing: 0.04em;
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 0.95rem;
   color: var(--ink-mute);
 }
 
@@ -463,8 +459,7 @@ a:hover {
 .panel-caption {
   font-family: var(--font-mono);
   font-size: 0.78rem;
-  text-transform: uppercase;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.04em;
   color: var(--ink-mute);
 }
 
@@ -511,14 +506,11 @@ a:hover {
   grid-template-columns: minmax(0, 1fr) minmax(0, 1.8fr) auto;
   gap: clamp(1rem, 3vw, 2.5rem);
   align-items: baseline;
-  padding: 1.25rem 0;
-  border-top: 1px solid var(--rule-soft);
+  padding: clamp(1.5rem, 3.5vw, 2.25rem) 0;
   transition: background-color 0.15s ease;
 }
 
 .more-row:hover { background-color: var(--paper-sunk); }
-
-.more-list .more-row:first-child { border-top: 1px solid var(--rule); }
 
 .more-title {
   color: var(--ink);
@@ -610,9 +602,7 @@ a:hover {
 }
 
 .footer p {
-  font-family: var(--font-mono);
-  font-size: 0.78rem;
-  letter-spacing: 0.04em;
+  font-size: 0.85rem;
   color: var(--ink-mute);
 }
 
