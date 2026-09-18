@@ -27,10 +27,20 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
+      # GitHub Pages serves whatever is uploaded, so the artifact must contain the
+      # site only. Staging into an allowlist keeps repo-only content (odd/ working
+      # documents, docs, configs) out of the public site by construction: a new
+      # internal directory can never leak, and a new site asset fails loudly here
+      # instead of silently disappearing in production.
+      - name: Stage site files
+        run: |
+          mkdir -p _site
+          cp -r index.html css js assets _site/
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: '.'
+          path: '_site'
 
       - name: Deploy to GitHub Pages
         id: deployment
